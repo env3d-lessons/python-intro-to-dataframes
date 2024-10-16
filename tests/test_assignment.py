@@ -5,6 +5,9 @@ import uuid
 import pandas
 import io
 
+def test_taxi_py_exists():
+    assert os.path.exists('taxi.py'), "taxi.py must be created"
+
 def test_taxi_py_no_argument():
     result = os.popen('python3 taxi.py').read()
     assert len(result.strip().split('\n')) == 1
@@ -56,6 +59,10 @@ def test_taxi_random_file_content(random_file):
             assert True
         except:
             assert False
+
+
+def test_reddit_py_exists():
+    assert os.path.exists('reddit.py'), "taxi.py must be created"
 
 @pytest.fixture(scope='session')
 def reddit_result():

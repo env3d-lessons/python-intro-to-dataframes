@@ -75,3 +75,8 @@ def test_reddit_py_format(reddit_result):
         assert True
     except:
         assert False, "Not correct format"
+
+def test_wordpress_py():
+    lines = os.popen('python3 wordpress.py time.com').read().strip().split('\n')
+    assert len(lines) == 10
+    assert len([line for line in lines if 'api.time.com' in line]) == 10

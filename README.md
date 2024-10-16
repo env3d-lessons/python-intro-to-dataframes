@@ -73,6 +73,6 @@ NASA Seeks Innovative Ideas with Revamped Procurement Framework,https://www.nasa
 
 HINT: There are many ways to achieve the above.  You will want to review the following
 
- - Python's `sys` module for reading command-line arguments
- - Python's `requests` module for reading data from URL
- - Pandas Dataframe's to_csv() function for easy conversion to csv format
+ - Python's `sys` module for reading command-line arguments (https://www.geeksforgeeks.org/command-line-arguments-in-python/)
+ - Python's `requests` module for reading data from URL (https://www.linkedin.com/learning/data-ingestion-with-python/making-http-calls)
+ - Pandas Dataframe's to_csv() function for easy conversion to csv format (https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)

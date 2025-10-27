@@ -62,7 +62,7 @@ def test_taxi_random_file_content(random_file):
 
 
 def test_reddit_py_exists():
-    assert os.path.exists('reddit.py'), "taxi.py must be created"
+    assert os.path.exists('reddit.py'), "reddit.py must be created"
 
 @pytest.fixture(scope='session')
 def reddit_result():

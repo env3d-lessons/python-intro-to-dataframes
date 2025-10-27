@@ -77,6 +77,7 @@ def test_result_py_content(reddit_result):
     assert len(lines) > 500
 
 def test_reddit_py_format(reddit_result):
+    assert len(reddit_result) > 0
     try:
         pandas.read_csv(io.StringIO(reddit_result))
         assert True
